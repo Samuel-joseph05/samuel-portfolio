@@ -32,61 +32,71 @@ export const ParticlesBackground = () => {
             },
             resize: true,
           },
-          modes: {
+            modes: {
             push: {
-              quantity: 4,
+              quantity: 10,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
               duration: 0.4,
             },
           },
         },
         particles: {
           color: {
-            value: ["#3B82F6", "#06B6D4", "#A855F7", "#EC4899"],
+            value: ["#ffffff", "#ffd700", "#87ceeb", "#ff69b4", "#9370db"],
           },
           links: {
-            color: "#3B82F6",
-            distance: 150,
-            enable: true,
-            opacity: 0.3,
-            width: 1,
+            enable: false,
           },
           move: {
             direction: "none",
             enable: true,
             outModes: {
-              default: "bounce",
+              default: "out",
             },
-            random: false,
-            speed: 1,
+            random: true,
+            speed: { min: 0.1, max: 0.8 },
             straight: false,
           },
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 1200,
             },
-            value: 80,
+            value: 200,
           },
           opacity: {
-            value: 0.5,
+            value: { min: 0.1, max: 1 },
             animation: {
               enable: true,
-              speed: 1,
+              speed: { min: 0.5, max: 2 },
               minimumValue: 0.1,
             },
           },
           shape: {
-            type: "circle",
+            type: ["circle", "star"],
+            options: {
+              star: {
+                sides: 5,
+                inRadius: 2,
+                outRadius: 5,
+              },
+            },
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 0.5, max: 3 },
             animation: {
               enable: true,
-              speed: 2,
+              speed: { min: 1, max: 3 },
               minimumValue: 0.1,
+            },
+          },
+          twinkle: {
+            particles: {
+              enable: true,
+              frequency: 0.05,
+              opacity: 1,
             },
           },
         },
