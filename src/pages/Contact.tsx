@@ -16,19 +16,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "samuel@example.com",
-    href: "mailto:samuel@example.com"
+    value: "samuela05022004@gmail.com",
+    href: "mailto:samuela05022004@gmail.com"
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567"
+    value: "+91 7305141711",
+    href: "tel: 7305141711"
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Pattabiram, Chennai",
     href: "#"
   }
 ];

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import { useState } from "react";
 
 const skillCategories = [
@@ -6,38 +6,31 @@ const skillCategories = [
     title: "Frontend Development",
     skills: [
       { name: "React", level: 95, color: "from-blue-500 to-cyan-500" },
-      { name: "TypeScript", level: 90, color: "from-blue-600 to-blue-800" },
-      { name: "Next.js", level: 85, color: "from-gray-700 to-gray-900" },
+      { name: "JavaScript", level: 90, color: "from-blue-600 to-blue-800" },
+      { name: "HTML",  level: 95, color: "from-orange-400 to-yellow-500" },
+      { name: "CSS", level: 90, color: "from-green-400 to-yellow-500" },
       { name: "Tailwind CSS", level: 92, color: "from-teal-400 to-blue-500" },
-      { name: "Framer Motion", level: 88, color: "from-purple-500 to-pink-500" },
-    ]
+      {
+        name: "Framer Motion",
+        level: 88,
+        color: "from-purple-500 to-pink-500",
+      },
+    ],
   },
   {
-    title: "Backend & Tools",
-    skills: [
-      { name: "Node.js", level: 80, color: "from-green-500 to-green-700" },
-      { name: "Express.js", level: 75, color: "from-gray-600 to-gray-800" },
-      { name: "PostgreSQL", level: 78, color: "from-blue-700 to-indigo-700" },
-      { name: "MongoDB", level: 82, color: "from-green-600 to-emerald-600" },
-      { name: "Git", level: 88, color: "from-orange-500 to-red-500" },
-    ]
+    title: " Tools",
+    skills: [{ name: "Git", level: 88, color: "from-orange-500 to-red-500" }],
   },
-  {
-    title: "Design & 3D",
-    skills: [
-      { name: "Three.js", level: 75, color: "from-yellow-400 to-orange-500" },
-      { name: "Figma", level: 85, color: "from-purple-400 to-pink-400" },
-      { name: "Adobe XD", level: 80, color: "from-pink-500 to-purple-600" },
-      { name: "Blender", level: 70, color: "from-orange-500 to-yellow-500" },
-      { name: "UI/UX Design", level: 87, color: "from-indigo-500 to-purple-500" },
-    ]
-  }
 ];
 
-const SkillBar = ({ skill, index, isVisible }: { 
-  skill: { name: string; level: number; color: string }; 
-  index: number; 
-  isVisible: boolean; 
+const SkillBar = ({
+  skill,
+  index,
+  isVisible,
+}: {
+  skill: { name: string; level: number; color: string };
+  index: number;
+  isVisible: boolean;
 }) => {
   return (
     <motion.div
@@ -57,12 +50,16 @@ const SkillBar = ({ skill, index, isVisible }: {
           {skill.level}%
         </motion.span>
       </div>
-      
+
       <div className="relative h-3 bg-muted rounded-full overflow-hidden">
         <motion.div
           initial={{ width: 0 }}
           animate={isVisible ? { width: `${skill.level}%` } : {}}
-          transition={{ delay: index * 0.1 + 0.3, duration: 0.8, ease: "easeOut" }}
+          transition={{
+            delay: index * 0.1 + 0.3,
+            duration: 0.8,
+            ease: "easeOut",
+          }}
           className={`h-full bg-gradient-to-r ${skill.color} rounded-full relative`}
         >
           <motion.div
@@ -76,10 +73,14 @@ const SkillBar = ({ skill, index, isVisible }: {
   );
 };
 
-const SkillCategory = ({ category, index, isVisible }: { 
-  category: typeof skillCategories[0]; 
-  index: number; 
-  isVisible: boolean; 
+const SkillCategory = ({
+  category,
+  index,
+  isVisible,
+}: {
+  category: (typeof skillCategories)[0];
+  index: number;
+  isVisible: boolean;
 }) => {
   return (
     <motion.div
@@ -96,7 +97,7 @@ const SkillCategory = ({ category, index, isVisible }: {
       >
         {category.title}
       </motion.h3>
-      
+
       <div className="space-y-6">
         {category.skills.map((skill, skillIndex) => (
           <SkillBar
@@ -141,7 +142,8 @@ export const Skills = () => {
             viewport={{ once: true }}
             className="text-xl text-foreground/70 max-w-2xl mx-auto"
           >
-            A comprehensive overview of my technical skills and proficiency levels
+            A comprehensive overview of my technical skills and proficiency
+            levels
           </motion.p>
         </motion.div>
 
@@ -187,9 +189,10 @@ export const Skills = () => {
             viewport={{ once: true }}
             className="text-foreground/70 max-w-3xl mx-auto leading-relaxed"
           >
-            Technology is constantly evolving, and so am I. I'm committed to continuous learning 
-            and staying up-to-date with the latest trends and best practices in web development. 
-            Currently exploring AI/ML integration in web applications and advanced animation techniques.
+            Technology is constantly evolving, and so am I. I'm committed to
+            continuous learning and staying up-to-date with the latest trends
+            and best practices in web development. Currently exploring AI/ML
+            integration in web applications and advanced animation techniques.
           </motion.p>
         </motion.div>
       </div>

@@ -5,7 +5,7 @@ import { GlowButton } from "@/components/UI/GlowButton";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: " Alexatra E-Commerce ",
     description: "A modern e-commerce platform built with React, TypeScript, and Stripe integration. Features real-time inventory management and responsive design.",
     image: "/api/placeholder/400/300",
     tags: ["React", "TypeScript", "Stripe", "Tailwind CSS"],
@@ -15,7 +15,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Pet Nose-print Idenfication",
     description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
     image: "/api/placeholder/400/300",
     tags: ["React", "Node.js", "Socket.io", "MongoDB"],
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "AI Dashboard",
+    title: "Portfolio",
     description: "Interactive dashboard for AI model management with data visualization, model training metrics, and deployment status tracking.",
     image: "/api/placeholder/400/300",
     tags: ["React", "D3.js", "Python", "FastAPI"],
