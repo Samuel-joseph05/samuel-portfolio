@@ -53,7 +53,8 @@ export const About = () => {
               viewport={{ once: true }}
               className="text-xl text-foreground/70 max-w-2xl mx-auto"
             >
-              Passionate frontend developer with a love for creating exceptional digital experiences
+              Passionate frontend developer with a love for creating exceptional
+              digital experiences
             </motion.p>
           </div>
 
@@ -70,12 +71,20 @@ export const About = () => {
               <div className="relative w-full max-w-sm mx-auto">
                 <motion.div
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                  transition={{
+                    duration: 20,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
                   className="absolute inset-0 rounded-full bg-gradient-primary opacity-20 blur-xl"
                 />
                 <div className="relative bg-card/80 backdrop-blur-sm p-8 rounded-2xl border border-border shadow-glow">
-                  <div className="w-64 h-64 mx-auto bg-gradient-primary rounded-full flex items-center justify-center">
-                    <span className="text-6xl font-bold text-background">SJ</span>
+                  <div className="w-64 h-64 mx-auto bg-gradient-primary rounded-full flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/sam-1.jpg"
+                      alt="My Photo"
+                      className="w-30 h-70 object-cover rounded-full" // 10rem x 10rem
+                    />
                   </div>
                 </div>
               </div>
@@ -91,18 +100,21 @@ export const About = () => {
             >
               <div className="prose prose-lg text-foreground/80 space-y-4">
                 <p>
-                  With over 3 years of experience in frontend development, I specialize in creating 
-                  modern, responsive, and performant web applications. My passion lies in transforming 
-                  complex ideas into intuitive user interfaces.
+                  With over 3 years of experience in frontend development, I
+                  specialize in creating modern, responsive, and performant web
+                  applications. My passion lies in transforming complex ideas
+                  into intuitive user interfaces.
                 </p>
                 <p>
-                  I'm constantly learning and adapting to new technologies, always striving to deliver 
-                  exceptional user experiences. When I'm not coding, you'll find me exploring the latest 
-                  design trends or contributing to open-source projects.
+                  I'm constantly learning and adapting to new technologies,
+                  always striving to deliver exceptional user experiences. When
+                  I'm not coding, you'll find me exploring the latest design
+                  trends or contributing to open-source projects.
                 </p>
                 <p>
-                  My approach combines technical expertise with creative problem-solving, ensuring that 
-                  every project I work on not only meets functional requirements but also delights users.
+                  My approach combines technical expertise with creative
+                  problem-solving, ensuring that every project I work on not
+                  only meets functional requirements but also delights users.
                 </p>
               </div>
             </motion.div>
