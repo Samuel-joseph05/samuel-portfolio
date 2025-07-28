@@ -4,8 +4,8 @@ import { Code, Lightbulb, Rocket, Target } from "lucide-react";
 const achievements = [
   {
     icon: Code,
-    title: "50+ Projects",
-    description: "Delivered across various industries",
+    title: "10+ Projects",
+    description: "Delivered a different range of web applications",
   },
   {
     icon: Lightbulb,
@@ -79,7 +79,7 @@ export const About = () => {
                   className="absolute inset-0 rounded-full bg-gradient-primary opacity-20 blur-xl"
                 />
                 <div className="relative bg-card/80 backdrop-blur-sm p-8 rounded-2xl border border-border shadow-glow">
-                  <div className="w-64 h-64 mx-auto bg-gradient-primary rounded-full flex items-center justify-center overflow-hidden">
+                  <div className="w-30 h-70 mx-auto bg-gradient-primary rounded-full flex items-center justify-center overflow-hidden">
                     <img
                       src="/sam-1.jpg"
                       alt="My Photo"
@@ -100,7 +100,7 @@ export const About = () => {
             >
               <div className="prose prose-lg text-foreground/80 space-y-4">
                 <p>
-                  With over 3 years of experience in frontend development, I
+                 With a strong foundation in frontend development, I
                   specialize in creating modern, responsive, and performant web
                   applications. My passion lies in transforming complex ideas
                   into intuitive user interfaces.

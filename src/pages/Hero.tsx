@@ -11,7 +11,7 @@ export const Hero = () => {
       href: "https://github.com/Samuel-joseph05",
       label: "GitHub",
     },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Linkedin, href: "http://www.linkedin.com/in/samuel-a-5aa56924a", label: "LinkedIn" },
     { icon: Mail, href: "mailto:samuela05022004@gmail.com", label: "Email" },
   ];
 
@@ -67,7 +67,7 @@ export const Hero = () => {
               className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto leading-relaxed"
             >
               Crafting immersive digital experiences with cutting-edge
-              technologies. Specializing in React, TypeScript, and modern web
+              technologies. Specializing in React, JavaScript, and modern web
               development.
             </motion.p>
           </motion.div>

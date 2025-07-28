@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -125,12 +126,12 @@ export const Contact = () => {
                     <motion.a
                       href={info.href}
                       whileHover={{ x: 5 }}
-                      className="flex items-center space-x-4 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-border hover:border-primary/30 transition-all duration-300 group"
+                      className="flex flex-wrap items-center space-x-4 p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-border hover:border-primary/30 transition-all duration-300 group"
                     >
                       <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
                         <info.icon className="w-6 h-6 text-primary" />
                       </div>
-                      <div>
+                      <div className="min-w-0">
                         <p className="text-sm text-foreground/60">{info.label}</p>
                         <p className="text-foreground font-medium">{info.value}</p>
                       </div>

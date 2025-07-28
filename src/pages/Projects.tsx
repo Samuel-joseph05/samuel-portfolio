@@ -6,11 +6,11 @@ const projects = [
   {
     id: 1,
     title: " Alexatra E-Commerce ",
-    description: "A modern e-commerce platform built with React, TypeScript, and Stripe integration. Features real-time inventory management and responsive design.",
+    description: "A modern e-commerce platform built with Html, CSS, JavaScript. Features real-time inventory management and responsive design.",
     image: "/api/placeholder/400/300",
-    tags: ["React", "TypeScript", "Stripe", "Tailwind CSS"],
+    tags: ["Html", "CSS", "JavaScript"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/Samuel-joseph05",
     color: "from-blue-500 to-purple-600"
   },
   {
@@ -18,49 +18,31 @@ const projects = [
     title: "Pet Nose-print Idenfication",
     description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
     image: "/api/placeholder/400/300",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
+    tags: ["HTML", "CSS", "JavaScript", "Flask"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/Samuel-joseph05",
     color: "from-green-500 to-teal-600"
   },
   {
     id: 3,
-    title: "Portfolio",
+    title: "Movies-Hub",
     description: "Interactive dashboard for AI model management with data visualization, model training metrics, and deployment status tracking.",
     image: "/api/placeholder/400/300",
-    tags: ["React", "D3.js", "Python", "FastAPI"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    tags: ["React"],
+    liveUrl: "https://movies-jerk.netlify.app/",
+    githubUrl: "https://github.com/Samuel-joseph05",
     color: "from-orange-500 to-red-600"
   },
+
+
   {
     id: 4,
-    title: "Social Media Platform",
-    description: "Modern social media platform with real-time messaging, media sharing, and advanced privacy controls.",
-    image: "/api/placeholder/400/300",
-    tags: ["React", "GraphQL", "AWS", "PostgreSQL"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-    color: "from-pink-500 to-purple-600"
-  },
-  {
-    id: 5,
-    title: "Weather App",
-    description: "Beautiful weather application with location-based forecasts, interactive maps, and weather alerts.",
-    image: "/api/placeholder/400/300",
-    tags: ["React Native", "OpenWeather API", "Maps"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-    color: "from-cyan-500 to-blue-600"
-  },
-  {
-    id: 6,
     title: "Portfolio Website",
     description: "This very website! A showcase of modern web development with animations, 3D graphics, and responsive design.",
     image: "/api/placeholder/400/300",
     tags: ["React", "Three.js", "Framer Motion", "TypeScript"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/Samuel-joseph05",
     color: "from-purple-500 to-indigo-600"
   }
 ];
@@ -210,7 +192,7 @@ export const Projects = () => {
               Let's create something amazing together!
             </p>
             <GlowButton variant="primary" size="lg">
-              Get In Touch
+                <a href="/Contact">Get In Touch</a>
             </GlowButton>
           </motion.div>
         </motion.div>

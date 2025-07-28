@@ -9,12 +9,7 @@ const skillCategories = [
       { name: "JavaScript", level: 90, color: "from-blue-600 to-blue-800" },
       { name: "HTML",  level: 95, color: "from-orange-400 to-yellow-500" },
       { name: "CSS", level: 90, color: "from-green-400 to-yellow-500" },
-      { name: "Tailwind CSS", level: 92, color: "from-teal-400 to-blue-500" },
-      {
-        name: "Framer Motion",
-        level: 88,
-        color: "from-purple-500 to-pink-500",
-      },
+     
     ],
   },
   {
