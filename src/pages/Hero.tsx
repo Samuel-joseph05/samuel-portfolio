@@ -11,7 +11,11 @@ export const Hero = () => {
       href: "https://github.com/Samuel-joseph05",
       label: "GitHub",
     },
-    { icon: Linkedin, href: "http://www.linkedin.com/in/samuel-a-5aa56924a", label: "LinkedIn" },
+    {
+      icon: Linkedin,
+      href: "http://www.linkedin.com/in/samuel-a-5aa56924a",
+      label: "LinkedIn",
+    },
     { icon: Mail, href: "mailto:samuela05022004@gmail.com", label: "Email" },
   ];
 
@@ -85,7 +89,7 @@ export const Hero = () => {
 
             <GlowButton variant="secondary" size="lg">
               <a
-                href="/samuel_A_frontend_developer.pdf"
+                href="/SamuelA_Resume.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
@@ -123,30 +127,6 @@ export const Hero = () => {
                 <link.icon className="w-6 h-6 text-foreground/70 group-hover:text-primary transition-colors" />
               </motion.a>
             ))}
-          </motion.div>
-
-          {/* Scroll Indicator */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 3, duration: 0.6 }}
-            className="flex flex-col items-center"
-          >
-            <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="text-foreground/50"
-            >
-              <ArrowDown className="w-6 h-6" />
-            </motion.div>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 3.2, duration: 0.6 }}
-              className="text-sm text-foreground/50 mt-2"
-            >
-              Scroll to explore
-            </motion.p>
           </motion.div>
         </div>
       </div>
