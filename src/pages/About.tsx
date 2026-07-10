@@ -53,7 +53,7 @@ export const About = () => {
               viewport={{ once: true }}
               className="text-xl text-foreground/70 max-w-2xl mx-auto"
             >
-              Passionate frontend developer with a love for creating exceptional
+              Passionate Fullstack developer with a love for creating exceptional
               digital experiences
             </motion.p>
           </div>
@@ -100,16 +100,10 @@ export const About = () => {
             >
               <div className="prose prose-lg text-foreground/80 space-y-4">
                 <p>
-                 With a strong foundation in frontend development, I
-                  specialize in creating modern, responsive, and performant web
-                  applications. My passion lies in transforming complex ideas
-                  into intuitive user interfaces.
+          I'm a Full-Stack Web Developer skilled in Next.js, React.js, Tailwind CSS, Node.js, Express.js, JWT, MongoDB, and SQL. 
+          I build responsive, secure, and scalable web applications with a focus on performance, clean code, and great user experience.
                 </p>
                 <p>
-                  I'm constantly learning and adapting to new technologies,
-                  always striving to deliver exceptional user experiences. When
-                  I'm not coding, you'll find me exploring the latest design
-                  trends or contributing to open-source projects.
                 </p>
                 <p>
                   My approach combines technical expertise with creative
