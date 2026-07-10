@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import {  Github, Linkedin, Mail } from "lucide-react";
 import { TypewriterText } from "@/components/UI/TypewriterText";
 import { GlowButton } from "@/components/UI/GlowButton";
 import { FloatingIcons } from "@/components/ThreeJS/FloatingIcons";
@@ -13,7 +13,7 @@ export const Hero = () => {
     },
     {
       icon: Linkedin,
-      href: "http://www.linkedin.com/in/samuel-a-5aa56924a",
+      href: "https://www.linkedin.com/in/samuel-a-5aa56924a",
       label: "LinkedIn",
     },
     { icon: Mail, href: "mailto:samuela05022004@gmail.com", label: "Email" },
@@ -57,7 +57,7 @@ export const Hero = () => {
               className="text-2xl md:text-4xl font-semibold text-foreground/80 mb-6"
             >
               <TypewriterText
-                text="Frontend Developer"
+                text="Fullstack Developer"
                 delay={1000}
                 speed={100}
                 className="text-primary"
@@ -70,9 +70,7 @@ export const Hero = () => {
               transition={{ delay: 1.5, duration: 0.6 }}
               className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto leading-relaxed"
             >
-              Crafting immersive digital experiences with cutting-edge
-              technologies. Specializing in React, JavaScript, and modern web
-              development.
+  Full-Stack Developer building modern, responsive, and scalable web applications with Next.js, React.js, Node.js, Express.js, MongoDB, SQL, and Tailwind CSS.
             </motion.p>
           </motion.div>
 
@@ -108,10 +106,10 @@ export const Hero = () => {
           >
             {socialLinks.map((link, index) => (
               <motion.a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
+               key={link.label}
+  href={link.href}
+  target={link.label !== "Email" ? "_blank" : undefined}
+  rel={link.label !== "Email" ? "noopener noreferrer" : undefined}
                 whileHover={{ scale: 1.2, y: -5 }}
                 whileTap={{ scale: 0.9 }}
                 className="p-3 rounded-lg bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-colors group"
