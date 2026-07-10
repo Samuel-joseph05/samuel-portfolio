@@ -3,45 +3,86 @@ import { ExternalLink, Github } from "lucide-react";
 import { GlowButton } from "@/components/UI/GlowButton";
 
 const projects = [
-  {
+      {
     id: 1,
-    title: " Alexatra E-Commerce ",
-    description: "A modern e-commerce platform built with Html, CSS, JavaScript. Features real-time inventory management and responsive design.",
+    title: "Delight Matrimony",
+    description: "A full-stack matrimony platform featuring secure JWT authentication, profile management, partner matching, Razorpay payment integration, AWS deployment, and a powerful admin dashboard.",
     image: "/api/placeholder/400/300",
-    tags: ["Html", "CSS", "JavaScript"],
+    tags: ["Next js","Tailwind CSS","shadcn UI", "Node js","Express js", "PostgreSQL","JWT","AWS","Razorpay"],
+    liveUrl: "https://www.delightmatrimony.in/",
+    githubUrl: "https://github.com/Samuel-joseph05",
+    color: "from-purple-400 to-purple-600"
+  },
+    {
+    id: 2,
+    title: "TrackEx",
+    description: "A simple MERN (MongoDB, Express, React, Node.js) application to perform CRUD operations for tracking expenses with JWT authentication.",
+    image: "/api/placeholder/400/300",
+    tags: ["React js", "Node js","Express js", "MongoDB","JWT","Tailwind CSS"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/Samuel-joseph05",
-    color: "from-blue-500 to-purple-600"
+    color: "from-gray-500 to-gray-600"
+  },
+      {
+    id: 3,
+    title: "MERN-JWT-Auth",
+    description: "A MERN stack application implementing JWT-based authentication for secure user management.",
+    image: "/api/placeholder/400/300",
+    tags: ["React js", "Node js","Express js", "MongoDB","JWT","Tailwind CSS"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/Samuel-joseph05",
+    color: "from-yellow-500 to-yellow-600"
+  },
+    {
+    id: 4,
+    title: "Taskify",
+    description: "Taskify-MERN is a task management application built with the MERN stack (MongoDB, Express.js, React, and Node.js). It enables users to efficiently create, track, and manage tasks with a responsive, user-friendly interface.",
+    image: "/api/placeholder/400/300",
+    tags: ["React js", "Node js","Express js", "MongoDB","JWT","Tailwind CSS"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/Samuel-joseph05",
+    color: "from-red-500 to-red-600"
+  },
+
+    {
+    id: 5,
+    title: "Movies-Hub",
+    description: "Created a modern movie discovery application with TMDB API integration, featuring real-time movie search, favorite movie management, and a responsive UI optimized for a seamless user experience.",
+    image: "/api/placeholder/400/300",
+    tags: ["React js","CSS","Api Integration"],
+    liveUrl: "https://movies-jerk.netlify.app/",
+    githubUrl: "https://github.com/Samuel-joseph05",
+    color: "from-orange-500 to-red-600"
   },
   {
-    id: 2,
+    id: 6,
     title: "Pet Nose-print Idenfication",
-    description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+    description: "Designed and developed an AI-powered Pet Nose Identification System that leverages deep learning to identify cats, dogs, and cows through their unique nose prints, supporting secure pet identification and veterinary record management. Built using HTML, CSS, JavaScript, Flask, TensorFlow, and PyTorch.",
     image: "/api/placeholder/400/300",
     tags: ["HTML", "CSS", "JavaScript", "Flask"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/Samuel-joseph05",
     color: "from-green-500 to-teal-600"
   },
-  {
-    id: 3,
-    title: "Movies-Hub",
-    description: "Interactive dashboard for AI model management with data visualization, model training metrics, and deployment status tracking.",
+
+    {
+    id: 7,
+    title: "Alexatra E-Commerce ",
+    description: "A modern e-commerce platform built with Html, CSS, JavaScript. Features real-time inventory management and responsive design.",
     image: "/api/placeholder/400/300",
-    tags: ["React"],
-    liveUrl: "https://movies-jerk.netlify.app/",
+    tags: ["Html", "CSS", "JavaScript"],
+    liveUrl: "https://alexatra-e-commerce.vercel.app/",
     githubUrl: "https://github.com/Samuel-joseph05",
-    color: "from-orange-500 to-red-600"
+    color: "from-pink-500 to-pink-600"
   },
 
-
   {
-    id: 4,
+    id: 8,
     title: "Portfolio Website",
     description: "This very website! A showcase of modern web development with animations, 3D graphics, and responsive design.",
     image: "/api/placeholder/400/300",
     tags: ["React", "Three.js", "Framer Motion", "TypeScript"],
-    liveUrl: "https://example.com",
+    liveUrl: "https://samuel-devfolio.vercel.app/",
     githubUrl: "https://github.com/Samuel-joseph05",
     color: "from-purple-500 to-indigo-600"
   }
