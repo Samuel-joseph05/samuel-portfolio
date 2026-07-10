@@ -29,7 +29,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Pattabiram, Chennai",
+    value: "Pattabiram, Chennai-72",
     href: "#"
   }
 ];
