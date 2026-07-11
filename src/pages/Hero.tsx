@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import {  Github, Linkedin, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import { TypewriterText } from "@/components/UI/TypewriterText";
 import { GlowButton } from "@/components/UI/GlowButton";
 import { FloatingIcons } from "@/components/ThreeJS/FloatingIcons";
@@ -82,7 +83,7 @@ export const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
           >
             <GlowButton variant="primary" size="lg" >
-              <a href="/projects">View My Work</a>
+             <Link to="/projects">View My Work</Link>
             </GlowButton>
 
             <GlowButton variant="secondary" size="lg">
