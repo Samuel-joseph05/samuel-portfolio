@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { GlowButton } from "@/components/UI/GlowButton";
+import { Link } from "react-router-dom";
 
 const projects = [
       {
@@ -233,7 +234,7 @@ export const Projects = () => {
               Let's create something amazing together!
             </p>
             <GlowButton variant="primary" size="lg">
-                <a href="/Contact">Get In Touch</a>
+                  <Link to="/contact">Get In Touch</Link>
             </GlowButton>
           </motion.div>
         </motion.div>
