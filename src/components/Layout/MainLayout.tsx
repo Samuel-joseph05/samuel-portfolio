@@ -56,7 +56,7 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
           exit="out"
           variants={pageVariants}
           transition={pageTransition}
-          className="relative z-10 pt-20"
+          className="relative z-10 pt-20 md:pt-0"
         >
           {children}
         </motion.main>

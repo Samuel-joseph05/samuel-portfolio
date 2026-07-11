@@ -3,7 +3,6 @@ import {  Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { TypewriterText } from "@/components/UI/TypewriterText";
 import { GlowButton } from "@/components/UI/GlowButton";
-import { FloatingIcons } from "@/components/ThreeJS/FloatingIcons";
 
 export const Hero = () => {
   const socialLinks = [
@@ -22,7 +21,7 @@ export const Hero = () => {
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <FloatingIcons />
+      <div className="hero-space-background absolute inset-0" aria-hidden="true" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
