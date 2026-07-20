@@ -20,19 +20,19 @@ const projects = [
     description: "A simple MERN (MongoDB, Express, React, Node.js) application to perform CRUD operations for tracking expenses with JWT authentication.",
     image: "/api/placeholder/400/300",
     tags: ["React js", "Node js","Express js", "MongoDB","JWT","Tailwind CSS"],
-    liveUrl: "https://example.com",
+    liveUrl: "https://walletra.vercel.app/",
     githubUrl: "https://github.com/Samuel-joseph05",
     color: "from-gray-500 to-gray-600"
   },
       {
     id: 3,
-    title: "MERN-JWT-Auth",
-    description: "A MERN stack application implementing JWT-based authentication for secure user management.",
+     title: "Movies-Hub",
+    description: "Created a modern movie discovery application with TMDB API integration, featuring real-time movie search, favorite movie management, and a responsive UI optimized for a seamless user experience.",
     image: "/api/placeholder/400/300",
-    tags: ["React js", "Node js","Express js", "MongoDB","JWT","Tailwind CSS"],
-    liveUrl: "https://example.com",
+    tags: ["React js","CSS","Api Integration"],
+    liveUrl: "https://movies-jerk.netlify.app/",
     githubUrl: "https://github.com/Samuel-joseph05",
-    color: "from-yellow-500 to-yellow-600"
+    color: "from-orange-500 to-red-600"
   },
     {
     id: 4,
@@ -45,16 +45,17 @@ const projects = [
     color: "from-red-500 to-red-600"
   },
 
-    {
-    id: 5,
-    title: "Movies-Hub",
-    description: "Created a modern movie discovery application with TMDB API integration, featuring real-time movie search, favorite movie management, and a responsive UI optimized for a seamless user experience.",
-    image: "/api/placeholder/400/300",
-    tags: ["React js","CSS","Api Integration"],
-    liveUrl: "https://movies-jerk.netlify.app/",
-    githubUrl: "https://github.com/Samuel-joseph05",
-    color: "from-orange-500 to-red-600"
-  },
+  //   {
+  //   id: 5,
+  //    title: "MERN-JWT-Auth",
+  //   description: "A MERN stack application implementing JWT-based authentication for secure user management.",
+  //   image: "/api/placeholder/400/300",
+  //   tags: ["React js", "Node js","Express js", "MongoDB","JWT","Tailwind CSS"],
+  //   liveUrl: "https://example.com",
+  //   githubUrl: "https://github.com/Samuel-joseph05",
+  //   color: "from-yellow-500 to-yellow-600"
+   
+  // },
   {
     id: 6,
     title: "Pet Nose-print Idenfication",
@@ -77,16 +78,16 @@ const projects = [
     color: "from-pink-500 to-pink-600"
   },
 
-  {
-    id: 8,
-    title: "Portfolio Website",
-    description: "This very website! A showcase of modern web development with animations, 3D graphics, and responsive design.",
-    image: "/api/placeholder/400/300",
-    tags: ["React", "Three.js", "Framer Motion", "TypeScript"],
-    liveUrl: "https://samuel-devfolio.vercel.app/",
-    githubUrl: "https://github.com/Samuel-joseph05",
-    color: "from-purple-500 to-indigo-600"
-  }
+  // {
+  //   id: 8,
+  //   title: "Portfolio Website",
+  //   description: "This very website! A showcase of modern web development with animations, 3D graphics, and responsive design.",
+  //   image: "/api/placeholder/400/300",
+  //   tags: ["React", "Three.js", "Framer Motion", "TypeScript"],
+  //   liveUrl: "https://samuel-devfolio.vercel.app/",
+  //   githubUrl: "https://github.com/Samuel-joseph05",
+  //   color: "from-purple-500 to-indigo-600"
+  // }
 ];
 
 const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: number }) => {
