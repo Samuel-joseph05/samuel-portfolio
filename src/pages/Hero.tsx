@@ -87,7 +87,7 @@ export const Hero = () => {
 
             <GlowButton variant="secondary" size="lg">
               <a
-                href="/SamuelA_Resume.pdf"
+                href="/Samuel_A_Resume.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
