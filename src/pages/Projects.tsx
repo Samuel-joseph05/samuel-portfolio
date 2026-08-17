@@ -17,10 +17,10 @@ const projects = [
     {
     id: 2,
     title: "TrackEx",
-    description: "A simple MERN (MongoDB, Express, React, Node.js) application to perform CRUD operations for tracking expenses with JWT authentication.",
+    description: "TrackEx is a full-stack expense tracking web application built with Next.js, Tailwind CSS, Node.js, Express.js, and MongoDB. It allows users to securely manage expenses with authentication, CRUD operations, search, filtering, pagination, and dashboard-based expense summaries.",
     image: "/api/placeholder/400/300",
-    tags: ["React js", "Node js","Express js", "MongoDB","JWT","Tailwind CSS"],
-    liveUrl: "https://walletra.vercel.app/",
+    tags: ["Nextjs", "Node js","Express js", "MongoDB","JWT","Tailwind CSS"],
+    liveUrl: "https://trackex-pro.vercel.app/",
     githubUrl: "https://github.com/Samuel-joseph05",
     color: "from-gray-500 to-gray-600"
   },
