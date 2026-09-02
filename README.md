@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://samuel-j.web.app/
+**URL**: https://samuel-devfolio.vercel.app/
 
 ## How can I edit this code?
 
