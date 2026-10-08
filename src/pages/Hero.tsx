@@ -81,11 +81,20 @@ export const Hero = () => {
             transition={{ delay: 2, duration: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
           >
-            <GlowButton variant="primary" size="lg" >
+      <GlowButton
+  variant="secondary"
+  size="lg"
+  className="text-sm px-3 py-2 sm:text-base sm:px-6 sm:py-3"
+>
+
              <Link to="/projects">View My Work</Link>
             </GlowButton>
 
-            <GlowButton variant="secondary" size="lg">
+<GlowButton
+  variant="secondary"
+  size="lg"
+  className="text-sm px-3 py-2 sm:text-base sm:px-6 sm:py-3"
+>
               <a
                 href="/Samuel_A_Resume.pdf"
                 download
