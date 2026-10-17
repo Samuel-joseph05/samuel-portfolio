@@ -4,46 +4,67 @@ import { GlowButton } from "@/components/UI/GlowButton";
 import { Link } from "react-router-dom";
 
 const projects = [
-      {
+  {
     id: 1,
     title: "Delight Matrimony",
-    description: "A full-stack matrimony platform featuring secure JWT authentication, profile management, partner matching, Razorpay payment integration, AWS deployment, and a powerful admin dashboard.",
-    image: "/api/placeholder/400/300",
-    tags: ["Next js","Tailwind CSS","shadcn UI", "Node js","Express js", "PostgreSQL","JWT","AWS","Razorpay"],
+    description:
+      "A full-stack matrimony platform featuring secure JWT authentication, profile management, partner matching, Razorpay payment integration, AWS deployment, and a powerful admin dashboard.",
+    image: "/delight.png",
+    tags: [
+      "Next js",
+      "Tailwind CSS",
+      "shadcn UI",
+      "Node js",
+      "Express js",
+      "PostgreSQL",
+      "JWT",
+      "AWS",
+      "Razorpay",
+    ],
     liveUrl: "https://www.delightmatrimony.in/",
     githubUrl: "https://github.com/Samuel-joseph05",
-    color: "from-purple-400 to-purple-600"
+    color: "from-purple-400 to-purple-600",
   },
-    {
+  {
     id: 2,
     title: "TrackEx",
-    description: "TrackEx is a full-stack expense tracking web application built with Next.js, Tailwind CSS, Node.js, Express.js, and MongoDB. It allows users to securely manage expenses with authentication, CRUD operations, search, filtering, pagination, and dashboard-based expense summaries.",
-    image: "/api/placeholder/400/300",
-    tags: ["Nextjs", "Node js","Express js", "MongoDB","JWT","Tailwind CSS"],
+    description:
+      "TrackEx is a full-stack expense tracking web application built with Next.js, Tailwind CSS, Node.js, Express.js, and MongoDB. It allows users to securely manage expenses with authentication, CRUD operations, search, filtering, pagination, and dashboard-based expense summaries.",
+    image: "/trackEx.png",
+    tags: ["Nextjs", "Node js", "Express js", "MongoDB", "JWT", "Tailwind CSS"],
     liveUrl: "https://trackex-pro.vercel.app/",
     githubUrl: "https://github.com/Samuel-joseph05",
-    color: "from-gray-500 to-gray-600"
+    color: "from-gray-500 to-gray-600",
   },
-      {
+  {
     id: 3,
-     title: "Movies-Hub",
-    description: "Created a modern movie discovery application with TMDB API integration, featuring real-time movie search, favorite movie management, and a responsive UI optimized for a seamless user experience.",
-    image: "/api/placeholder/400/300",
-    tags: ["React js","CSS","Api Integration"],
+    title: "Movies-Hub",
+    description:
+      "Created a modern movie discovery application with TMDB API integration, featuring real-time movie search, favorite movie management, and a responsive UI optimized for a seamless user experience.",
+    image: "movies.png",
+    tags: ["React js", "CSS", "Api Integration"],
     liveUrl: "https://movies-jerk.netlify.app/",
     githubUrl: "https://github.com/Samuel-joseph05",
-    color: "from-orange-500 to-red-600"
+    color: "from-orange-500 to-red-600",
   },
-    {
-    id: 4,
-    title: "Taskify",
-    description: "Taskify-MERN is a task management application built with the MERN stack (MongoDB, Express.js, React, and Node.js). It enables users to efficiently create, track, and manage tasks with a responsive, user-friendly interface.",
-    image: "/api/placeholder/400/300",
-    tags: ["React js", "Node js","Express js", "MongoDB","JWT","Tailwind CSS"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/Samuel-joseph05",
-    color: "from-red-500 to-red-600"
-  },
+  // {
+  //   id: 4,
+  //   title: "Taskify",
+  //   description:
+  //     "Taskify-MERN is a task management application built with the MERN stack (MongoDB, Express.js, React, and Node.js). It enables users to efficiently create, track, and manage tasks with a responsive, user-friendly interface.",
+  //   image: "/api/placeholder/400/300",
+  //   tags: [
+  //     "React js",
+  //     "Node js",
+  //     "Express js",
+  //     "MongoDB",
+  //     "JWT",
+  //     "Tailwind CSS",
+  //   ],
+  //   liveUrl: "https://example.com",
+  //   githubUrl: "https://github.com/Samuel-joseph05",
+  //   color: "from-red-500 to-red-600",
+  // },
 
   //   {
   //   id: 5,
@@ -54,28 +75,30 @@ const projects = [
   //   liveUrl: "https://example.com",
   //   githubUrl: "https://github.com/Samuel-joseph05",
   //   color: "from-yellow-500 to-yellow-600"
-   
+
   // },
   {
     id: 6,
     title: "Pet Nose-print Idenfication",
-    description: "Designed and developed an AI-powered Pet Nose Identification System that leverages deep learning to identify cats, dogs, and cows through their unique nose prints, supporting secure pet identification and veterinary record management. Built using HTML, CSS, JavaScript, Flask, TensorFlow, and PyTorch.",
-    image: "/api/placeholder/400/300",
+    description:
+      "Designed and developed an AI-powered Pet Nose Identification System that leverages deep learning to identify cats, dogs, and cows through their unique nose prints, supporting secure pet identification and veterinary record management. Built using HTML, CSS, JavaScript, Flask, TensorFlow, and PyTorch.",
+    image: "/pet-nose.png",
     tags: ["HTML", "CSS", "JavaScript", "Flask"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/Samuel-joseph05",
-    color: "from-green-500 to-teal-600"
+    color: "from-green-500 to-teal-600",
   },
 
-    {
+  {
     id: 7,
     title: "Alexatra E-Commerce ",
-    description: "A modern e-commerce platform built with Html, CSS, JavaScript. Features real-time inventory management and responsive design.",
-    image: "/api/placeholder/400/300",
+    description:
+      "A modern e-commerce platform built with Html, CSS, JavaScript. Features real-time inventory management and responsive design.",
+    image: "Alexatra.png",
     tags: ["Html", "CSS", "JavaScript"],
     liveUrl: "https://alexatra-e-commerce.vercel.app/",
     githubUrl: "https://github.com/Samuel-joseph05",
-    color: "from-pink-500 to-pink-600"
+    color: "from-pink-500 to-pink-600",
   },
 
   // {
@@ -90,7 +113,13 @@ const projects = [
   // }
 ];
 
-const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: number }) => {
+const ProjectCard = ({
+  project,
+  index,
+}: {
+  project: (typeof projects)[0];
+  index: number;
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -105,14 +134,16 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
         <motion.div
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
-          className={`w-full h-48 bg-gradient-to-br ${project.color} relative`}
+          className="relative w-full h-48"
         >
-          <div className="absolute inset-0 bg-black/20" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-4xl font-bold text-white">{project.title.charAt(0)}</span>
-          </div>
+          <img
+            src={project.image}
+            alt={`${project.title} screenshot`}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
         </motion.div>
-        
+
         {/* Overlay */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -150,7 +181,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
         <p className="text-foreground/70 text-sm mb-4 leading-relaxed">
           {project.description}
         </p>
-        
+
         {/* Tags */}
         <div className="flex flex-wrap gap-2">
           {project.tags.map((tag) => (
@@ -195,7 +226,8 @@ export const Projects = () => {
             viewport={{ once: true }}
             className="text-xl text-foreground/70 max-w-2xl mx-auto"
           >
-            A selection of projects that showcase my skills and passion for development
+            A selection of projects that showcase my skills and passion for
+            development
           </motion.p>
         </motion.div>
 
@@ -231,11 +263,11 @@ export const Projects = () => {
               Interested in collaborating?
             </h3>
             <p className="text-foreground/70 mb-6 max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities and exciting projects. 
-              Let's create something amazing together!
+              I'm always open to discussing new opportunities and exciting
+              projects. Let's create something amazing together!
             </p>
             <GlowButton variant="primary" size="lg">
-                  <Link to="/contact">Get In Touch</Link>
+              <Link to="/contact">Get In Touch</Link>
             </GlowButton>
           </motion.div>
         </motion.div>
