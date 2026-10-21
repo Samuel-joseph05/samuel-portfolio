@@ -25,8 +25,26 @@ const projects = [
     githubUrl: "https://github.com/Samuel-joseph05",
     color: "from-purple-400 to-purple-600",
   },
+   
+  {id: 2,
+  title: "Rithamika Boutique",
+  description:
+    "Designed and developed a responsive boutique website using Next.js, Tailwind CSS, and Framer Motion, featuring bilingual English/Tamil support, interactive product catalogs, and WhatsApp integration for streamlined customer enquiries.",
+  image: "/rithamika-boutique.png",
+  tags: [
+    "Next.js",
+    "JavaScript",
+    "Tailwind CSS",
+    "Framer Motion",
+    "React",
+    "WhatsApp Integration",
+  ],
+  liveUrl: "https://rithamikaboutique.vercel.app/",
+  githubUrl: "https://github.com/Samuel-joseph05",
+  color: "from-amber-500 to-yellow-600",
+},
   {
-    id: 2,
+    id: 3,
     title: "TrackEx",
     description:
       "TrackEx is a full-stack expense tracking web application built with Next.js, Tailwind CSS, Node.js, Express.js, and MongoDB. It allows users to securely manage expenses with authentication, CRUD operations, search, filtering, pagination, and dashboard-based expense summaries.",
@@ -37,7 +55,7 @@ const projects = [
     color: "from-gray-500 to-gray-600",
   },
   {
-    id: 3,
+    id: 4,
     title: "Movies-Hub",
     description:
       "Created a modern movie discovery application with TMDB API integration, featuring real-time movie search, favorite movie management, and a responsive UI optimized for a seamless user experience.",
@@ -47,38 +65,9 @@ const projects = [
     githubUrl: "https://github.com/Samuel-joseph05",
     color: "from-orange-500 to-red-600",
   },
-  // {
-  //   id: 4,
-  //   title: "Taskify",
-  //   description:
-  //     "Taskify-MERN is a task management application built with the MERN stack (MongoDB, Express.js, React, and Node.js). It enables users to efficiently create, track, and manage tasks with a responsive, user-friendly interface.",
-  //   image: "/api/placeholder/400/300",
-  //   tags: [
-  //     "React js",
-  //     "Node js",
-  //     "Express js",
-  //     "MongoDB",
-  //     "JWT",
-  //     "Tailwind CSS",
-  //   ],
-  //   liveUrl: "https://example.com",
-  //   githubUrl: "https://github.com/Samuel-joseph05",
-  //   color: "from-red-500 to-red-600",
-  // },
 
-  //   {
-  //   id: 5,
-  //    title: "MERN-JWT-Auth",
-  //   description: "A MERN stack application implementing JWT-based authentication for secure user management.",
-  //   image: "/api/placeholder/400/300",
-  //   tags: ["React js", "Node js","Express js", "MongoDB","JWT","Tailwind CSS"],
-  //   liveUrl: "https://example.com",
-  //   githubUrl: "https://github.com/Samuel-joseph05",
-  //   color: "from-yellow-500 to-yellow-600"
-
-  // },
   {
-    id: 6,
+    id: 5,
     title: "Pet Nose-print Idenfication",
     description:
       "Designed and developed an AI-powered Pet Nose Identification System that leverages deep learning to identify cats, dogs, and cows through their unique nose prints, supporting secure pet identification and veterinary record management. Built using HTML, CSS, JavaScript, Flask, TensorFlow, and PyTorch.",
@@ -90,7 +79,7 @@ const projects = [
   },
 
   {
-    id: 7,
+    id: 6,
     title: "Alexatra E-Commerce ",
     description:
       "A modern e-commerce platform built with Html, CSS, JavaScript. Features real-time inventory management and responsive design.",
@@ -101,16 +90,6 @@ const projects = [
     color: "from-pink-500 to-pink-600",
   },
 
-  // {
-  //   id: 8,
-  //   title: "Portfolio Website",
-  //   description: "This very website! A showcase of modern web development with animations, 3D graphics, and responsive design.",
-  //   image: "/api/placeholder/400/300",
-  //   tags: ["React", "Three.js", "Framer Motion", "TypeScript"],
-  //   liveUrl: "https://samuel-devfolio.vercel.app/",
-  //   githubUrl: "https://github.com/Samuel-joseph05",
-  //   color: "from-purple-500 to-indigo-600"
-  // }
 ];
 
 const ProjectCard = ({
@@ -134,7 +113,7 @@ const ProjectCard = ({
         <motion.div
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
-          className="relative w-full h-48"
+          className="relative w-full h-48  "
         >
           <img
             src={project.image}
